@@ -1,0 +1,52 @@
+.contacts {
+
+  &__container {
+    @include pageGrid;
+
+    row-gap: 48px;
+
+    @include onTablet {
+      row-gap: 80px;
+    }
+  }
+
+  &__form {
+    grid-column: 1 / -1;
+
+    @include onDesktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__content {
+
+    grid-column: 1 / -1;
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subject {
+    margin: 0;
+
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    line-height: 140%;
+    color: #9393a3;
+  }
+
+  &__info {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 140%;
+    color: #191919;
+  }
+}

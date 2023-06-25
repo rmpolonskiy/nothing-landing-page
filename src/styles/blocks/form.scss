@@ -1,0 +1,31 @@
+.form {
+  display: grid;
+  row-gap: 16px;
+
+  &__item {
+    box-sizing: border-box;
+    padding: 14 16px;
+
+    font-size: 14px;
+
+    background-color: #f8f8fa;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 140%;
+      color: #7e7e83;
+    }
+
+    &--textarea {
+      margin-bottom: 16px;
+      height: 148px;
+      font-family: inherit;
+      color: #7e7e83;
+      resize: none;
+    }
+  }
+
+}
